@@ -32,7 +32,7 @@ package fuse
 
 // Use `set CPATH=C:\Program Files (x86)\WinFsp\inc\fuse` on Windows.
 // The flag `I/usr/local/include/winfsp` only works on xgo and docker.
-#cgo windows CFLAGS: -DFUSE_USE_VERSION=28 -I./winfsp
+#cgo windows CFLAGS: -DFUSE_USE_VERSION=28
 
 #if !(defined(__APPLE__) || defined(__FreeBSD__) || defined(__NetBSD__) || defined(__OpenBSD__) || defined(__linux__) || defined(_WIN32))
 #error platform not supported
