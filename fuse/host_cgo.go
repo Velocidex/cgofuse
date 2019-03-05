@@ -27,12 +27,12 @@ package fuse
 #cgo openbsd CFLAGS: -DFUSE_USE_VERSION=28 -D_FILE_OFFSET_BITS=64
 #cgo openbsd LDFLAGS: -lfuse
 
-#cgo linux CFLAGS: -DFUSE_USE_VERSION=28 -D_FILE_OFFSET_BITS=64 -I/usr/include/fuse
+#cgo linux CFLAGS: -DFUSE_USE_VERSION=28 -D_FILE_OFFSET_BITS=64 -I./linux/
 #cgo linux LDFLAGS: -lfuse
 
 // Use `set CPATH=C:\Program Files (x86)\WinFsp\inc\fuse` on Windows.
 // The flag `I/usr/local/include/winfsp` only works on xgo and docker.
-#cgo windows CFLAGS: -DFUSE_USE_VERSION=28 -I/usr/local/include/winfsp
+#cgo windows CFLAGS: -DFUSE_USE_VERSION=28 -I./winfsp
 
 #if !(defined(__APPLE__) || defined(__FreeBSD__) || defined(__NetBSD__) || defined(__OpenBSD__) || defined(__linux__) || defined(_WIN32))
 #error platform not supported

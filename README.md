@@ -1,3 +1,6 @@
+This fork is modified to include the fuse headers. This avoids having
+to have fuse installed from the system.
+
 # Cross-platform FUSE library for Go
 
 [![CircleCI](https://img.shields.io/circleci/project/github/billziss-gh/cgofuse.svg?label=cross-build)](https://circleci.com/gh/billziss-gh/cgofuse)
